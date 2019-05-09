@@ -1,0 +1,4 @@
+[submodule "xmarts/reporte_jarochito"]
+	path = xmarts/reporte_jarochito
+	url = git@github.com:xmarts/reporte_jarochito.git
+	branch = master

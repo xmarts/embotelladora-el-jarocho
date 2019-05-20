@@ -1,0 +1,58 @@
+<odoo>
+  <data>
+    
+  	<!-- <record id="action_modulo_data" model="ir.ui.view">
+      	<field name="name">Etiquetas tarimas</field>
+      	<field name="model">labels.pallets</field>
+      	<field name="arch" type="xml">
+        	<form>
+        		<group>
+        			<group>
+     	        		<field name="turn"/>
+        			</group>
+	        		<group>
+	        			<field name="pallet"/>
+	        		</group>
+        		</group>
+        	</form>
+      </field>
+    </record> -->
+
+  <record id="labels_pallets_tree" model="ir.ui.view">
+    <field name="name">Etiquetas tarimas</field>
+    <field name="model">labels.pallets</field>
+    <field name="type">tree</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name" />
+        <field name="turn" />
+        <field name="pallet" />
+        <field name="date" />
+        </tree>
+    </field>
+  </record>
+
+	<record id="labels_pallets_id" model="ir.actions.act_window">
+    <field name='name'>Etiquetas tarimas</field>
+    <field name='type'>ir.actions.act_window</field>
+    <field name='res_model'>labels.pallets</field>
+    <field name='view_type'>form</field>
+    <field name='view_mode'>tree,form</field>
+  </record>
+
+    <menuitem 
+      id="pallets_labels" name="Etiquetas tarimas" 
+      parent="stock.menu_stock_inventory_control" sequence="0" action="labels_pallets_id"/>
+
+    <record id="pallets_view" model="ir.actions.act_window">
+      <field name='name'>Tarimas</field>
+      <field name='res_model'>pallets</field>
+      <field name='view_mode'>tree,form</field>
+    </record>
+
+     <menuitem 
+      id="pallets_id" name="Tarimas" 
+      parent="stock.menu_product_in_config_stock" sequence="0" action="pallets_view"/>
+
+  </data>
+</odoo>

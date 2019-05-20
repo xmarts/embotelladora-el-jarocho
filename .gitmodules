@@ -1,6 +1,3 @@
 [submodule "notas_credito"]
 	path = notas_credito
 	url = git@github.com:xmarts/notas_credito.git
-[submodule "reporte_jarochito"]
-	path = reporte_jarochito
-	url = git@github.com:xmarts/reporte_jarochito.git

@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+
+    <record id="add_fields_sales_page_other_information" model="ir.ui.view">
+      <field name="name">add.fields.sales.page.other.information</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"/> 
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='expected_date']" position="after">
+          <field name="number_order" string="Numero de orden"/>
+          <field name="number_appoi" string="Numero de cita"/>
+          <field name="date_of_deli" string="Fecha de entrega"/>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>

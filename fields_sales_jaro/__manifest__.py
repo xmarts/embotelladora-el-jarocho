@@ -3,20 +3,20 @@
     'name': "fields_sales_jaro",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Añade campos en otra información""",
 
     'description': """
-        Long description of module's purpose
+        Añade campos de numero de orden, numero de cita y fecha de entrega.
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Xmarts",
+    'Collaborator' : "Marco Aguilar",
+    'website': "http://www.xmarts.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Sales',
     'version': '0.1',
 
     # any module necessary for this one to work correctly

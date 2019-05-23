@@ -9,7 +9,8 @@
         Creación de campos para la descripción del producto y muestra el tipo de tarifa en la dirección de envío
     """,
 
-    'author': "Xmarts, Colaborador : Marco Aguilar ",
+    'author': "Xmarts",
+    'Collaborator' : "Marco Aguilar",
     'website': "http://www.xmarts.com",
 
     # Categories can be used to filter modules in modules listing

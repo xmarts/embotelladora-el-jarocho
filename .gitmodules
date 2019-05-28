@@ -1,0 +1,3 @@
+[submodule "notas_credito"]
+	path = notas_credito
+	url = https://github.com/xmarts/notas_credito.git

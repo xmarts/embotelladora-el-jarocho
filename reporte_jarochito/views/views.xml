@@ -1,0 +1,48 @@
+<odoo>
+  <data>
+
+    <!-- Añadiendo un nuevo page con campos en la vista del producto -->
+
+    <record id="add_page_description_product" model="ir.ui.view">
+      <field name="name">add.page.description.product</field>
+      <field name="model">product.template</field>
+      <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+          <xpath expr="//page[@name='inventory']" position="after">
+            <page string="Descripcion del producto">
+              <group>
+                <group>
+                  <field name="clase_prod" string="Clase" />
+                  <field name="presentation_prod" string="Presentación" />
+                  <field name="code_container_prod" string="Cod. Tipo de envase" />
+                </group>
+                <group>
+                  <field name="taste_product" string="Sabor" />
+                  <field name="brand_product" string="Código de marca" />
+                </group>
+              </group>
+            </page>
+          </xpath>
+        </field>
+    </record>
+  
+    <!-- Añadiendo campos en la vista de contacto -->
+
+    <record id="add_camp_tarif" model="ir.ui.view">
+      <field name="name">add.camp.tarif</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='child_ids']/form/sheet/group/group[2]//field[@name='name']" position="before">
+          <group>
+            <field name="rate_address" string="Tarifa" />
+          </group>
+        </xpath>
+        <xpath expr="//field[@name='property_product_pricelist']" position="after">
+          <field name="most_ieps" string="Mostrar IEPS" />
+        </xpath>
+      </field>
+    </record> 
+
+  </data>
+</odoo>

@@ -1,6 +1,3 @@
 [submodule "notas_credito"]
 	path = notas_credito
 	url = https://github.com/xmarts/notas_credito.git
-[submodule "multi_branch"]
-	path = multi_branch
-	url = git@github.com:viernes/multi_branch.git

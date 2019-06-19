@@ -1,0 +1,12 @@
+<odoo>
+
+    <template id="pos_save_quotations_assets" name="pos_save_quotations assets" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/pos_save_quotations/static/src/css/pos_save_quotations.css"/>
+            <script type="text/javascript" src="/pos_save_quotations/static/src/js/db.js"/>
+            <script type="text/javascript" src="/pos_save_quotations/static/src/js/models.js"/>
+            <script type="text/javascript" src="/pos_save_quotations/static/src/js/screen.js"/>
+        </xpath>
+    </template>
+
+</odoo>

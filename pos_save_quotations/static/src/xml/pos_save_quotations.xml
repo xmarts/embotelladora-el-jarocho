@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="shops_popup">
+        <div class="modal-dialog">
+            <div class="popup">
+                <p class="title">Please choice shop and click to Save</p>
+                <div class="product-list-scroller touch-scrollable">
+                    <div class="product-list">
+                        <t t-if="widget.shops">
+                            <t t-foreach="widget.shops" t-as="shop">
+                                <span class='product' t-att-data-id="shop.id">
+                                    <div class="product-img">
+                                        <img t-att-src="widget.image_url + shop.id" />
+                                    </div>
+                                    <div class="product-name">
+                                        <t t-esc="shop.name"/>
+                                    </div>
+                                </span>
+                            </t>
+                        </t>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="button confirm">
+                        Save
+                    </div>
+                    <div class="button cancel">
+                        Close
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <!-- Quotations screen -->
+    <t t-name="quotation_screen">
+        <div class="clientlist-screen screen">
+            <div class="screen-content">
+                <section class="top-content">
+                    <span class='searchbox'>
+                        <input placeholder='Search Quotation'/>
+                        <span class='search-clear'></span>
+                    </span>
+                    <span class='searchbox'></span>
+                </section>
+                <div class="col-sm-8" style="padding-left: 0px; padding-top: 60px">
+                    <button class="button control-button back contr"><i class="fa fa-angle-double-left"></i> Back</button>
+                    <button class="button control-button get-quotation"><i class="fa fa-th"></i> Get Quotations</button>
+                    <button class="button control-button load-quotation highlight"><i class="fa fa-cart-plus"></i> Made Order</button>
+                    <button class="button control-button delete-quotation "><i class="fa fa-trash"></i> Delete quotation</button>
+                </div>
+                <section class="full-content" style="top: 120px">
+                    <div class='window'>
+                        <section class='subwindow collapsed'>
+                            <div class='subwindow-container collapsed'>
+                                <div class='subwindow-container-fix client-details-contents'>
+                                </div>
+                            </div>
+                        </section>
+                        <section class='subwindow'>
+                            <div class='subwindow-container'>
+                                <div class='subwindow-container-fix touch-scrollable scrollable-y'>
+                                    <table class='client-list'>
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Order</th>
+                                                <th>Customer</th>
+                                                <th>Address</th>
+                                                <th>Mobile</th>
+                                                <th>Phone</th>
+                                                <th>Note</th>
+                                                <th>Amount Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class='client-list-contents'>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="quotation">
+        <tr class='quotation-line' t-att-data-id='quotation.id'>
+            <td><t t-esc='quotation.name'/></td>
+            <td><t t-esc='quotation.uid'/></td>
+            <td><t t-if="quotation.partner_id.name"><t t-esc='quotation.partner_id.name'/></t></td>
+            <td><t t-if="quotation.partner_id.street"><t t-esc='quotation.partner_id.street'/></t></td>
+            <td><t t-if="quotation.partner_id.phone"><t t-esc='quotation.partner_id.phone'/></t></td>
+            <td><t t-if="quotation.partner_id.mobile"><t t-esc='quotation.partner_id.mobile'/></t></td>
+            <td><t t-if="quotation.datas.note"><t t-esc='quotation.datas.note'/></t></td>
+            <td><t t-esc='quotation.amount_total'/></td>
+        </tr>
+    </t>
+
+    <t t-extend="OrderWidget">
+        <t t-jquery=".order" t-operation="after">
+            <div class="quotation-note">
+                <p>Shipping address (notes):</p>
+                <textarea class='order-note' rows="3" cols="40"><t t-esc="order.note" /></textarea>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="button_save_quotation">
+        <button class="save-quotation control-button btn btn-success btn-fill btn-wd"><i class="fa fa-save"></i> Save Quotation</button>
+    </t>
+
+    <t t-name="button_loading_quotation">
+        <button class="loading-quotation control-button btn btn-success btn-fill btn-wd"><i class="fa fa-list"></i> Quotations</button>
+    </t>
+
+</templates>

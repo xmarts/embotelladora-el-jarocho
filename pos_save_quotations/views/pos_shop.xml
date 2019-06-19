@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+
+        <record id="pos_shop_tree" model="ir.ui.view">
+            <field name="name">pos.shop.tree</field>
+            <field name="model">pos.shop</field>
+            <field name="arch" type="xml">
+                <tree string="Shops">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="pos_shop_form" model="ir.ui.view">
+            <field name="name">pos.shop.form</field>
+            <field name="model">pos.shop</field>
+            <field name="arch" type="xml">
+                <form string="Shops">
+                    <group>
+                        <field name="image" widget='image' class="oe_avatar"/>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_pos_shop">
+            <field name="name">Shops</field>
+            <field name="res_model">pos.shop</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_act_pos_shop"
+            parent="menu_pos_save_quotation"
+            action="act_pos_shop"
+            sequence="10"
+            name="Shops"
+            groups="point_of_sale.group_pos_manager"
+            />
+
+    </data>
+</odoo>

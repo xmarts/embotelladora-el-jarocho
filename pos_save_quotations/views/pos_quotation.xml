@@ -1,0 +1,87 @@
+<odoo>
+    <data>
+
+        <menuitem id="menu_pos_save_quotation"
+            parent="point_of_sale.menu_point_root"
+            sequence="21"
+            name="POS Quotations"
+            groups="point_of_sale.group_pos_manager"
+            />
+
+        <record id="pos_quotation_tree" model="ir.ui.view">
+            <field name="name">pos.quotation.tree</field>
+            <field name="model">pos.quotation</field>
+            <field name="arch" type="xml">
+                <tree string="Quotations save">
+                    <field name="name"/>
+                    <field name="uid"/>
+                    <field name="session_id"/>
+                    <field name="shop_ids"/>
+                    <field name="user_id"/>
+                    <field name="create_date"/>
+                    <field name="partner_id"/>
+                    <field name="state"/>
+                    <button string="Remove Quotation" type="object" icon="fa fa-check" states="waiting_transfer" name="remove_pos_quotation"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="pos_quotation_form" model="ir.ui.view">
+            <field name="name">pos.quotation.form</field>
+            <field name="model">pos.quotation</field>
+            <field name="arch" type="xml">
+                <form string="Quotations save" options="{'no_edit': True, 'no_create': True}">
+                    <header>
+                        <button string="Remove Quotation" type="object" class="oe_highlight" states="waiting_transfer" name="remove_pos_quotation"/>
+                        <field name="state" widget="statusbar" clickable="1"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" readonly="1"/>
+                                <field name="uid" readonly="1"/>
+                                <field name="session_id" readonly="1"/>
+                                <field name="shop_ids" widget="many2many_tags"/>
+                            </group>
+                            <group>
+                                <field name="user_id" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="partner_id"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="note"/>
+                        </group>
+                        <group>
+                            <field name="line_ids">
+                                <tree string="Lines" readonly="1">
+                                    <field name="product_id"/>
+                                    <field name="discount"/>
+                                    <field name="price_unit"/>
+                                    <field name="qty"/>
+                                    <field name="tax_ids" widget="many2many_tags"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_pos_quotation">
+            <field name="name">Quotations of POS</field>
+            <field name="res_model">pos.quotation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_act_pos_quotation"
+            parent="menu_pos_save_quotation"
+            sequence="20"
+            action="act_pos_quotation"
+            name="Quotations"
+            groups="point_of_sale.group_pos_manager"
+            />
+
+    </data>
+</odoo>

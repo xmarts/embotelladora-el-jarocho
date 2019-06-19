@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+
+        <record id="shop_01" model="ir.sequence">
+            <field name="name">Shop 01</field>
+        </record>
+
+        <record id="shop_02" model="ir.sequence">
+            <field name="name">Shop 02</field>
+        </record>
+
+    </data>
+</odoo>

@@ -9,3 +9,6 @@
 	path = xmarts/credit_limit_alert_update
 	url = git@github.com:xmarts/credit_limit_alert_update.git
 	branch = Denker12
+[submodule "suite_account_disperse"]
+	path = suite_account_disperse
+	url = git@github.com:viernes/suite_account_disperse.git

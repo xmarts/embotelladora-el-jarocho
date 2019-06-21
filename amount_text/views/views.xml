@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+   
+
+    <record id="view_order_form_add_time" model="ir.ui.view">
+      <field name="name">Add fields time</field>
+      <field name="model">account.invoice</field>
+      <field name="inherit_id" ref="account.invoice_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='partner_id']" position="after">
+            <field name="amount_to_text" string="Monto en texto" invisible="1"/>
+         </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>

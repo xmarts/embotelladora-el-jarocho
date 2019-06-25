@@ -20,3 +20,6 @@
 	path = tracking
 	url = git@github.com:xmarts/tracking.git
 	branch = 12.0
+[submodule "field_contacts_jaro"]
+	path = field_contacts_jaro
+	url = git@github.com:xmarts/field_contacts_jaro.git

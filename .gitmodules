@@ -27,6 +27,3 @@
 [submodule "pos_save_quotations"]
 	path = pos_save_quotations
 	url = git@github.com:viernes/pos_save_quotations.git
-[submodule "multi_branch"]
-	path = multi_branch
-	url = git@github.com:viernes/multi_branch.git

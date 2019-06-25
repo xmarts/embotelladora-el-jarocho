@@ -4,3 +4,8 @@
 [submodule "multi_branch"]
 	path = multi_branch
 	url = git@github.com:viernes/multi_branch.git
+
+[submodule "xmarts/credit_limit_alert_update"]
+	path = xmarts/credit_limit_alert_update
+	url = git@github.com:xmarts/credit_limit_alert_update.git
+	branch = dev12

@@ -7,3 +7,21 @@
 [submodule "multi_branch"]
 	path = multi_branch
 	url = git@github.com:viernes/multi_branch.git
+[submodule "field_contacts_jaro"]
+	path = field_contacts_jaro
+	url = git@github.com:xmarts/field_contacts_jaro.git
+[submodule "ieps_calculation"]
+	path = ieps_calculation
+	url = git@github.com:xmarts/ieps_calculation.git
+[submodule "suite_account_disperse"]
+	path = suite_account_disperse
+	url = git@github.com:viernes/suite_account_disperse.git
+[submodule "account_multi_pay"]
+	path = account_multi_pay
+	url = git@github.com:viernes/account_multi_pay.git
+[submodule "tracking"]
+	path = tracking
+	url = git@github.com:xmarts/tracking.git
+[submodule "credit_limit_alert_update"]
+	path = credit_limit_alert_update
+	url = git@github.com:xmarts/credit_limit_alert_update.git

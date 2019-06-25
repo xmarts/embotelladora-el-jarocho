@@ -9,3 +9,8 @@
 	path = xmarts/credit_limit_alert_update
 	url = git@github.com:xmarts/credit_limit_alert_update.git
 	branch = dev12
+
+[submodule "xmarts/field_contacts_jaro"]
+	path = xmarts/field_contacts_jaro
+	url = git@github.com:xmarts/field_contacts_jaro.git
+	branch = master

@@ -22,3 +22,6 @@
 [submodule "suite_account_disperse"]
 	path = suite_account_disperse
 	url = git@github.com:viernes/suite_account_disperse.git
+[submodule "account_multi_pay"]
+	path = account_multi_pay
+	url = git@github.com:viernes/account_multi_pay.git

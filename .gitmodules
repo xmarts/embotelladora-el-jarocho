@@ -14,3 +14,8 @@
 	path = xmarts/field_contacts_jaro
 	url = git@github.com:xmarts/field_contacts_jaro.git
 	branch = master
+
+[submodule "xmarts/ieps_calculation"]
+	path = xmarts/ieps_calculation
+	url = git@github.com:xmarts/ieps_calculation.git
+	branch = master

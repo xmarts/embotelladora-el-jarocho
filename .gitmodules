@@ -1,6 +1,3 @@
 [submodule "notas_credito"]
 	path = notas_credito
 	url = https://github.com/xmarts/notas_credito.git
-[submodule "pos_save_quotations"]
-	path = pos_save_quotations
-	url = https://github.com/viernes/pos_save_quotations.git

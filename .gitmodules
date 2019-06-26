@@ -25,3 +25,6 @@
 [submodule "credit_limit_alert_update"]
 	path = credit_limit_alert_update
 	url = git@github.com:xmarts/credit_limit_alert_update.git
+[submodule "amount_to_text"]
+	path = amount_to_text
+	url = https://github.com/xmarts/amount_to_text.git

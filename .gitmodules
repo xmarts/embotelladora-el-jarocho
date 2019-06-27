@@ -1,3 +1,7 @@
 [submodule "notas_credito"]
 	path = notas_credito
 	url = https://github.com/xmarts/notas_credito.git
+[submodule "tracking"]
+	path = tracking
+	url = git@github.com:xmarts/tracking.git
+	branch = 12.0

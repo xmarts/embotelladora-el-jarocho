@@ -11,3 +11,6 @@
 [submodule "credit_limit_alert_update"]
 	path = credit_limit_alert_update
 	url = git@github.com:xmarts/credit_limit_alert_update.git
+[submodule "account_multi_pay"]
+	path = account_multi_pay
+	url = git@github.com:viernes/account_multi_pay.git

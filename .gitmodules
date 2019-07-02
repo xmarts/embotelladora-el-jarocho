@@ -29,3 +29,6 @@
 [submodule "amount_to_text"]
 	path = amount_to_text
 	url = https://github.com/xmarts/amount_to_text.git
+[submodule "fields_functions_jarochito"]
+	path = fields_functions_jarochito
+	url = https://github.com/xmarts/fields_functions_jarochito.git

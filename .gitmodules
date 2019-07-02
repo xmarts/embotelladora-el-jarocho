@@ -5,3 +5,6 @@
 	path = tracking
 	url = git@github.com:xmarts/tracking.git
 	branch = 12.0
+[submodule "multi_branch"]
+	path = multi_branch
+	url = git@github.com:viernes/multi_branch.git

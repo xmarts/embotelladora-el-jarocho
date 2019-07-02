@@ -5,3 +5,9 @@
 	path = tracking
 	url = git@github.com:xmarts/tracking.git
 	branch = 12.0
+[submodule "multi_branch"]
+	path = multi_branch
+	url = git@github.com:viernes/multi_branch.git
+[submodule "credit_limit_alert_update"]
+	path = credit_limit_alert_update
+	url = git@github.com:xmarts/credit_limit_alert_update.git

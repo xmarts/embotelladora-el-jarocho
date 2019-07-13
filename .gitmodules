@@ -16,3 +16,6 @@
 [submodule "charge_uuid_expense"]
 	path = charge_uuid_expense
 	url = git@github.com:xmarts/charge_uuid_expense.git
+[submodule "payments_usd_mxn"]
+	path = payments_usd_mxn
+	url = git@github.com:xmarts/payments_usd_mxn.git

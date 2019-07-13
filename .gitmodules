@@ -13,3 +13,6 @@
 [submodule "fields_functions_jarochito"]
 	path = fields_functions_jarochito
 	url = git@github.com:xmarts/fields_functions_jarochito.git
+[submodule "charge_uuid_expense"]
+	path = charge_uuid_expense
+	url = git@github.com:xmarts/charge_uuid_expense.git

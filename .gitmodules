@@ -10,3 +10,6 @@
 [submodule "account_multi_pay"]
 	path = account_multi_pay
 	url = git@github.com:viernes/account_multi_pay.git
+[submodule "fields_functions_jarochito"]
+	path = fields_functions_jarochito
+	url = git@github.com:xmarts/fields_functions_jarochito.git

@@ -22,3 +22,6 @@
 [submodule "ieps_calculation"]
 	path = ieps_calculation
 	url = git@github.com:xmarts/ieps_calculation.git
+[submodule "amount_to_text"]
+	path = amount_to_text
+	url = git@github.com:xmarts/amount_to_text.git

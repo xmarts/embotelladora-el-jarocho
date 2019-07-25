@@ -34,3 +34,6 @@
 [submodule "charge_uuid_expense"]
 	path = charge_uuid_expense
 	url = git@github.com:xmarts/charge_uuid_expense.git
+[submodule "Validador_de_movimientos"]
+	path = Validador_de_movimientos
+	url = https://github.com/xmarts/Validador_de_movimientos.git

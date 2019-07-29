@@ -10,3 +10,6 @@
 [submodule "account_multi_pay"]
 	path = account_multi_pay
 	url = git@github.com:viernes/account_multi_pay.git
+[submodule "pos_save_quotations"]
+	path = pos_save_quotations
+	url = git@github.com:viernes/pos_save_quotations.git

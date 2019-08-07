@@ -13,3 +13,6 @@
 [submodule "tracking"]
 	path = tracking
 	url = https://github.com/xmarts/tracking.git
+[submodule "stock_cycle_count"]
+	path = stock_cycle_count
+	url = https://github.com/xmarts/stock_cycle_count

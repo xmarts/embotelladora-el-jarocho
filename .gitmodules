@@ -28,3 +28,6 @@
 [submodule "addenda_farmgdl"]
 	path = addenda_farmgdl
 	url = https://github.com/xmarts/addenda_farmgdl.git
+[submodule "addendas_soriana"]
+	path = addendas_soriana
+	url = https://github.com/xmarts/addendas_soriana.git

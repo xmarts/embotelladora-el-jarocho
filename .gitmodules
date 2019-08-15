@@ -19,3 +19,6 @@
 [submodule "fields_functions_jarochito"]
 	path = fields_functions_jarochito
 	url = https://github.com/xmarts/fields_functions_jarochito.git
+[submodule "addenda_siete24"]
+	path = addenda_siete24
+	url = https://github.com/xmarts/addenda_siete24.git

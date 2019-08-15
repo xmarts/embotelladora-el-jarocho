@@ -22,3 +22,6 @@
 [submodule "addenda_siete24"]
 	path = addenda_siete24
 	url = https://github.com/xmarts/addenda_siete24.git
+[submodule "amount_to_text"]
+	path = amount_to_text
+	url = https://github.com/xmarts/amount_to_text.git

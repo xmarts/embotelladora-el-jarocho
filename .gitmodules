@@ -31,3 +31,6 @@
 [submodule "addendas_soriana"]
 	path = addendas_soriana
 	url = https://github.com/xmarts/addendas_soriana.git
+[submodule "ieps_calculation"]
+	path = ieps_calculation
+	url = https://github.com/xmarts/ieps_calculation.git

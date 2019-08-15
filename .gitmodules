@@ -16,3 +16,6 @@
 [submodule "stock_cycle_count"]
 	path = stock_cycle_count
 	url = https://github.com/xmarts/stock_cycle_count
+[submodule "fields_functions_jarochito"]
+	path = fields_functions_jarochito
+	url = https://github.com/xmarts/fields_functions_jarochito.git

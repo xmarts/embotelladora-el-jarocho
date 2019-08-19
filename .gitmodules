@@ -40,3 +40,6 @@
 [submodule "addenda_tiendas3b"]
 	path = addenda_tiendas3b
 	url = https://github.com/xmarts/addenda_tiendas3b.git
+[submodule "addenda_sanfranciscoasis"]
+	path = addenda_sanfranciscoasis
+	url = https://github.com/xmarts/addenda_sanfranciscoasis.git

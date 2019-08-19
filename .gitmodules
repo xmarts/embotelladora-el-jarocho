@@ -37,3 +37,6 @@
 [submodule "addenda_superprecio"]
 	path = addenda_superprecio
 	url = https://github.com/xmarts/addenda_superprecio.git
+[submodule "addenda_tiendas3b"]
+	path = addenda_tiendas3b
+	url = https://github.com/xmarts/addenda_tiendas3b.git
